@@ -1,0 +1,1222 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>麻d传媒剧在线mv免费_在线MV剧集社区_官方品牌门户</title>
+<meta name="description" content="麻d传媒剧在线mv免费官方网站，专注原创高清MV剧集与影像内容生态，为创作者与观众提供值得信赖的专业视频社区平台。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d1f26'/%3E%3Cpath d='M22 18l26 14-26 14z' fill='%23ff5a3c'/%3E%3C/svg%3E">
+<style>
+:root{
+  --mdm-ink:#16181f;
+  --mdm-ink2:#23262f;
+  --mdm-paper:#f6f4f0;
+  --mdm-paper2:#efece5;
+  --mdm-line:#d9d4ca;
+  --mdm-accent:#e8442a;
+  --mdm-accent-soft:#ffe4de;
+  --mdm-gold:#c8973f;
+  --mdm-muted:#6c6a66;
+  --mdm-radius:14px;
+  --mdm-shadow:0 10px 30px rgba(22,24,31,.10);
+  --mdm-head:112px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--mdm-head)}
+body{
+  margin:0;
+  font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  background:var(--mdm-paper);
+  color:var(--mdm-ink);
+  line-height:1.75;
+  font-size:16px;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:800;letter-spacing:.2px}
+p{margin:0 0 14px}
+ul{margin:0;padding:0;list-style:none}
+.mdm-wrap{width:min(1180px,92vw);margin:0 auto}
+
+/* ============ 吸顶公告 + 页头 ============ */
+.mdm-topbar{
+  position:sticky;top:0;z-index:80;
+  background:var(--mdm-ink);
+  color:#f3efe8;
+}
+.mdm-notice{
+  background:linear-gradient(90deg,#1d1f26,#2a2d38 60%,#1d1f26);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.mdm-notice-inner{
+  display:flex;align-items:center;gap:12px;
+  padding:8px 0;font-size:13.5px;flex-wrap:wrap;
+}
+.mdm-notice-tag{
+  background:var(--mdm-accent);color:#fff;border-radius:999px;
+  padding:2px 10px;font-size:12px;font-weight:700;letter-spacing:.5px;white-space:nowrap;
+}
+.mdm-notice-track{flex:1;min-width:220px;overflow:hidden;position:relative;height:22px}
+.mdm-notice-item{
+  position:absolute;inset:0;display:flex;align-items:center;gap:8px;
+  opacity:0;transform:translateY(10px);transition:.5s ease;color:#cfc9be;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.mdm-notice-item.is-on{opacity:1;transform:none}
+.mdm-notice-item b{color:#fff;font-weight:600}
+.mdm-notice-item span{color:#8e887d}
+.mdm-notice-link{color:#ffb3a3;font-size:13px;white-space:nowrap}
+
+.mdm-header{background:var(--mdm-ink)}
+.mdm-header-inner{
+  display:flex;align-items:center;gap:22px;padding:14px 0;
+}
+.mdm-logo{display:flex;align-items:center;gap:10px;color:#fff;flex-shrink:0}
+.mdm-logo-mark{
+  width:38px;height:38px;border-radius:11px;background:var(--mdm-accent);
+  display:grid;place-items:center;box-shadow:0 6px 16px rgba(232,68,42,.4);
+}
+.mdm-logo-mark svg{width:18px;height:18px}
+.mdm-logo-text{display:flex;flex-direction:column;line-height:1.15}
+.mdm-logo-text strong{font-size:17px;letter-spacing:.5px;color:#fff}
+.mdm-logo-text em{font-style:normal;font-size:11px;color:#8f897e;letter-spacing:2px}
+
+.mdm-nav{display:flex;gap:4px;margin-left:6px;flex-wrap:wrap}
+.mdm-nav a{
+  padding:7px 12px;border-radius:9px;font-size:14.5px;color:#cfc9be;transition:.22s;
+}
+.mdm-nav a:hover,.mdm-nav a.is-active{background:rgba(255,255,255,.1);color:#fff}
+
+.mdm-search{
+  margin-left:auto;display:flex;align-items:center;gap:8px;
+  background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);
+  border-radius:999px;padding:5px 6px 5px 14px;min-width:216px;
+}
+.mdm-search input{
+  border:0;background:transparent;color:#fff;outline:none;font-size:14px;width:100%;
+}
+.mdm-search input::placeholder{color:#8f897e}
+.mdm-search button{
+  border:0;border-radius:999px;background:var(--mdm-accent);color:#fff;
+  padding:6px 14px;font-size:13px;font-weight:700;transition:.2s;
+}
+.mdm-search button:hover{background:#ff5c40}
+.mdm-search-hint{
+  font-size:12.5px;color:#ffb3a3;position:absolute;margin-top:44px;display:none;
+}
+.mdm-search-hint.is-show{display:block}
+
+.mdm-burger{
+  display:none;border:1px solid rgba(255,255,255,.2);background:transparent;
+  color:#fff;border-radius:10px;padding:7px 11px;font-size:16px;
+}
+
+/* ============ HERO ============ */
+.mdm-hero{
+  background:
+    radial-gradient(1100px 480px at 82% -10%, rgba(232,68,42,.16), transparent 70%),
+    linear-gradient(180deg,#1d1f26 0%,#23262f 60%,#1b1d23 100%);
+  color:#f3efe8;padding:46px 0 60px;position:relative;overflow:hidden;
+}
+.mdm-hero::after{
+  content:"";position:absolute;inset:auto 0 0 0;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.18),transparent);
+}
+.mdm-hero-grid{
+  display:grid;grid-template-columns:5fr 5fr;gap:46px;align-items:center;
+}
+.mdm-hero-kicker{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:2px;
+  color:#ffb3a3;border:1px solid rgba(255,179,163,.35);border-radius:999px;padding:5px 13px;
+  margin-bottom:18px;
+}
+.mdm-hero h1{
+  font-size:clamp(28px,4vw,46px);line-height:1.22;margin-bottom:16px;color:#fff;
+  text-wrap:balance;
+}
+.mdm-hero h1 span{color:var(--mdm-accent)}
+.mdm-hero-lead{font-size:16.5px;color:#cfc9be;max-width:52ch;margin-bottom:22px}
+.mdm-hero-intro{
+  font-size:14.5px;color:#a8a29a;background:rgba(255,255,255,.05);
+  border-left:3px solid var(--mdm-accent);border-radius:0 10px 10px 0;
+  padding:14px 18px;margin-bottom:24px;
+}
+.mdm-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px}
+.mdm-btn{
+  display:inline-flex;align-items:center;gap:8px;border-radius:11px;
+  padding:11px 22px;font-size:15px;font-weight:700;border:1px solid transparent;transition:.22s;
+}
+.mdm-btn-primary{background:var(--mdm-accent);color:#fff;box-shadow:0 8px 22px rgba(232,68,42,.34)}
+.mdm-btn-primary:hover{background:#ff5c40;transform:translateY(-1px)}
+.mdm-btn-ghost{border-color:rgba(255,255,255,.28);color:#f3efe8}
+.mdm-btn-ghost:hover{background:rgba(255,255,255,.1)}
+
+.mdm-hero-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.mdm-stat{
+  background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.1);
+  border-radius:12px;padding:13px 14px;
+}
+.mdm-stat b{display:block;font-size:22px;color:#fff;letter-spacing:.5px}
+.mdm-stat span{font-size:12.5px;color:#9a948a}
+
+.mdm-hero-visual{position:relative}
+.mdm-hero-frame{
+  border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,.14);
+  box-shadow:0 26px 60px rgba(0,0,0,.45);background:#101116;
+}
+.mdm-hero-frame img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.mdm-hero-badge{
+  position:absolute;left:-14px;bottom:22px;background:#fff;color:var(--mdm-ink);
+  border-radius:12px;padding:10px 16px;font-size:13px;font-weight:700;
+  box-shadow:var(--mdm-shadow);display:flex;align-items:center;gap:9px;
+}
+.mdm-hero-badge i{
+  width:9px;height:9px;border-radius:50%;background:var(--mdm-accent);
+  display:inline-block;animation:mdmPulse 1.6s infinite;
+}
+@keyframes mdmPulse{0%,100%{opacity:1}50%{opacity:.25}}
+
+/* ============ 通用板块 ============ */
+.mdm-sec{padding:62px 0}
+.mdm-sec-alt{background:var(--mdm-paper2)}
+.mdm-sec-head{margin-bottom:30px;max-width:760px}
+.mdm-sec-tag{
+  display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:2px;
+  color:var(--mdm-accent);background:var(--mdm-accent-soft);
+  border-radius:999px;padding:4px 12px;margin-bottom:12px;
+}
+.mdm-sec-head h2{font-size:clamp(22px,2.6vw,31px);margin-bottom:12px}
+.mdm-sec-head p{color:var(--mdm-muted);font-size:15px;margin:0}
+.mdm-sec-head h2 em{font-style:normal;color:var(--mdm-accent)}
+
+/* ============ 焦点内容 ============ */
+.mdm-focus-grid{
+  display:grid;grid-template-columns:6fr 4fr;gap:26px;align-items:start;
+}
+.mdm-focus-main{
+  background:#fff;border-radius:var(--mdm-radius);overflow:hidden;
+  border:1px solid var(--mdm-line);box-shadow:var(--mdm-shadow);
+}
+.mdm-focus-main img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.mdm-focus-body{padding:22px 24px 24px}
+.mdm-focus-body h3{font-size:21px;margin-bottom:10px}
+.mdm-focus-meta{display:flex;gap:14px;font-size:13px;color:var(--mdm-muted);flex-wrap:wrap;margin-bottom:12px}
+.mdm-focus-body p{font-size:14.5px;color:#4a4843;margin-bottom:16px}
+
+.mdm-tag{
+  display:inline-block;font-size:12px;padding:3px 10px;border-radius:999px;
+  background:var(--mdm-paper2);color:#57544e;margin:0 6px 6px 0;
+}
+.mdm-tag-accent{background:var(--mdm-accent-soft);color:#b93a24}
+
+.mdm-ops{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.mdm-op{
+  border:1px solid var(--mdm-line);background:#fff;border-radius:9px;
+  padding:6px 13px;font-size:13px;color:#4a4843;display:inline-flex;align-items:center;gap:6px;transition:.2s;
+}
+.mdm-op:hover{border-color:var(--mdm-accent);color:var(--mdm-accent)}
+.mdm-op.is-on{background:var(--mdm-accent);border-color:var(--mdm-accent);color:#fff}
+.mdm-op .mdm-cnt{font-variant-numeric:tabular-nums}
+
+.mdm-focus-side{display:flex;flex-direction:column;gap:16px}
+.mdm-side-item{
+  background:#fff;border:1px solid var(--mdm-line);border-radius:var(--mdm-radius);
+  padding:16px 18px;transition:.22s;
+}
+.mdm-side-item:hover{transform:translateY(-3px);box-shadow:var(--mdm-shadow);border-color:#c9c2b6}
+.mdm-side-item h4{font-size:15.5px;margin-bottom:7px}
+.mdm-side-item p{font-size:13.5px;color:var(--mdm-muted);margin:0 0 10px}
+
+/* ============ 视频条目列表 ============ */
+.mdm-vlist{display:flex;flex-direction:column;gap:14px;margin-top:26px}
+.mdm-vitem{
+  display:grid;grid-template-columns:64px 1fr auto;gap:16px;align-items:center;
+  background:#fff;border:1px solid var(--mdm-line);border-radius:12px;
+  padding:14px 18px;transition:.22s;
+}
+.mdm-vitem:hover{border-color:var(--mdm-accent);box-shadow:0 8px 22px rgba(22,24,31,.08)}
+.mdm-vitem-thumb{border-radius:9px;overflow:hidden;aspect-ratio:16/9;background:var(--mdm-paper2)}
+.mdm-vitem-thumb img{width:100%;height:100%;object-fit:cover}
+.mdm-vitem h4{font-size:15.5px;margin-bottom:5px}
+.mdm-vitem-body p{font-size:13.5px;color:var(--mdm-muted);margin:0 0 8px}
+.mdm-vitem-info{font-size:12.5px;color:#8b867d;display:flex;gap:14px;flex-wrap:wrap}
+.mdm-vitem-ops{display:flex;gap:8px;flex-wrap:wrap}
+
+/* ============ 关键词解析 ============ */
+.mdm-article{max-width:900px}
+.mdm-article h3{font-size:19px;margin:30px 0 12px;color:var(--mdm-ink);position:relative;padding-left:14px}
+.mdm-article h3::before{
+  content:"";position:absolute;left:0;top:6px;bottom:6px;width:4px;
+  border-radius:3px;background:var(--mdm-accent);
+}
+.mdm-article p{font-size:15.5px;color:#3d3b37;margin-bottom:15px;text-align:justify}
+.mdm-article h3:first-child{margin-top:0}
+.mdm-quote{
+  background:#fff;border:1px solid var(--mdm-line);border-left:4px solid var(--mdm-gold);
+  border-radius:0 12px 12px 0;padding:16px 20px;margin:22px 0;font-size:14.5px;color:#4a4843;
+}
+
+/* ============ 专题 ============ */
+.mdm-topic-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.mdm-topic{
+  background:#fff;border:1px solid var(--mdm-line);border-radius:var(--mdm-radius);
+  overflow:hidden;display:flex;flex-direction:column;transition:.22s;
+}
+.mdm-topic:hover{transform:translateY(-3px);box-shadow:var(--mdm-shadow)}
+.mdm-topic img{width:100%;aspect-ratio:16/7;object-fit:cover}
+.mdm-topic-body{padding:18px 20px 20px}
+.mdm-topic-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px}
+.mdm-topic-head h3{font-size:17px}
+.mdm-badge{font-size:11.5px;padding:3px 9px;border-radius:999px;font-weight:700;white-space:nowrap}
+.mdm-badge-live{background:#e7f6ec;color:#1f7a45}
+.mdm-badge-soon{background:#fdf3e2;color:#9a6b12}
+.mdm-topic-body>p{font-size:13.8px;color:var(--mdm-muted);margin-bottom:12px}
+.mdm-topic-list li{
+  font-size:13.5px;color:#4a4843;padding:7px 0;border-top:1px dashed var(--mdm-line);
+  display:flex;gap:8px;align-items:flex-start;
+}
+.mdm-topic-list li span{color:var(--mdm-accent);font-weight:700;flex-shrink:0}
+
+/* ============ 作者区（双列简介） ============ */
+.mdm-authors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.mdm-author{
+  display:flex;gap:16px;background:#fff;border:1px solid var(--mdm-line);
+  border-radius:var(--mdm-radius);padding:20px;transition:.22s;
+}
+.mdm-author:hover{border-color:#c9c2b6;box-shadow:var(--mdm-shadow)}
+.mdm-avatar{
+  width:58px;height:58px;border-radius:50%;flex-shrink:0;
+  display:grid;place-items:center;font-weight:800;font-size:20px;color:#fff;
+}
+.mdm-author-info h4{font-size:16px;margin-bottom:3px;display:flex;align-items:center;gap:8px}
+.mdm-author-role{font-size:12.5px;color:var(--mdm-accent);font-weight:700;margin-bottom:7px}
+.mdm-author-info p{font-size:13.5px;color:var(--mdm-muted);margin-bottom:9px}
+.mdm-author-nums{display:flex;gap:16px;font-size:12.5px;color:#8b867d;margin-bottom:10px}
+.mdm-author-nums b{color:var(--mdm-ink);font-variant-numeric:tabular-nums}
+
+/* ============ 评价 ============ */
+.mdm-review-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.mdm-review{
+  background:#fff;border:1px solid var(--mdm-line);border-radius:var(--mdm-radius);
+  padding:18px 20px;display:flex;flex-direction:column;gap:10px;
+}
+.mdm-review-top{display:flex;align-items:center;gap:10px}
+.mdm-review-top .mdm-avatar{width:34px;height:34px;font-size:13px}
+.mdm-review-name{font-size:13.5px;font-weight:700}
+.mdm-review-meta{font-size:11.5px;color:#9a948a}
+.mdm-review-body{font-size:13.8px;color:#4a4843;flex:1}
+.mdm-stars{color:var(--mdm-gold);font-size:13px;letter-spacing:1px}
+
+/* ============ 品牌动态 ============ */
+.mdm-news{border-left:2px solid var(--mdm-line);margin-left:6px;padding-left:0}
+.mdm-news li{padding:14px 0 14px 22px;position:relative}
+.mdm-news li::before{
+  content:"";position:absolute;left:-6px;top:24px;width:10px;height:10px;
+  border-radius:50%;background:#fff;border:2px solid var(--mdm-accent);
+}
+.mdm-news time{font-size:12.5px;color:#9a948a;display:block;margin-bottom:4px}
+.mdm-news h4{font-size:15.5px;margin-bottom:5px}
+.mdm-news p{font-size:13.8px;color:var(--mdm-muted);margin:0}
+
+/* ============ FAQ ============ */
+.mdm-faq{max-width:860px;display:flex;flex-direction:column;gap:10px}
+.mdm-faq details{
+  background:#fff;border:1px solid var(--mdm-line);border-radius:12px;
+  padding:14px 18px;transition:.2s;
+}
+.mdm-faq details[open]{border-color:var(--mdm-accent);box-shadow:0 8px 22px rgba(22,24,31,.07)}
+.mdm-faq summary{
+  font-size:15px;font-weight:700;cursor:pointer;list-style:none;
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+}
+.mdm-faq summary::-webkit-details-marker{display:none}
+.mdm-faq summary::after{content:"+";color:var(--mdm-accent);font-size:20px;font-weight:700;line-height:1}
+.mdm-faq details[open] summary::after{content:"−"}
+.mdm-faq p{font-size:14px;color:var(--mdm-muted);margin:12px 0 0}
+
+/* ============ 合作墙 ============ */
+.mdm-partners{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.mdm-partner{
+  background:#fff;border:1px solid var(--mdm-line);border-radius:12px;
+  padding:18px 14px;text-align:center;font-weight:700;font-size:14.5px;color:#4a4843;
+  transition:.2s;
+}
+.mdm-partner:hover{border-color:var(--mdm-accent);color:var(--mdm-accent);transform:translateY(-2px)}
+.mdm-partner small{display:block;font-weight:400;font-size:12px;color:#9a948a;margin-top:4px}
+
+/* ============ 页脚 ============ */
+.mdm-footer{background:#1b1d23;color:#a8a29a;padding:52px 0 30px}
+.mdm-footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:30px;margin-bottom:34px}
+.mdm-footer h4{color:#fff;font-size:15px;margin-bottom:14px}
+.mdm-footer li{font-size:13.5px;padding:5px 0}
+.mdm-footer a:hover{color:#fff}
+.mdm-footer .mdm-logo{margin-bottom:14px}
+.mdm-footer p{font-size:13.5px;color:#8f897e;line-height:1.8}
+.mdm-footer-bottom{
+  border-top:1px solid rgba(255,255,255,.1);padding-top:20px;
+  font-size:12.5px;color:#7d7870;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+}
+.mdm-slogan{color:#c9c2b6}
+
+/* ============ 悬浮/弹层 ============ */
+.mdm-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+  background:var(--mdm-ink);color:#fff;padding:11px 22px;border-radius:999px;
+  font-size:13.5px;opacity:0;pointer-events:none;transition:.3s;z-index:200;
+  box-shadow:0 12px 30px rgba(0,0,0,.3);
+}
+.mdm-toast.is-show{opacity:1;transform:translate(-50%,0)}
+
+.mdm-modal{
+  position:fixed;inset:0;background:rgba(16,17,22,.62);z-index:150;
+  display:none;place-items:center;padding:20px;
+}
+.mdm-modal.is-show{display:grid}
+.mdm-modal-box{
+  background:#fff;border-radius:16px;padding:26px 28px;width:min(560px,100%);
+  position:relative;box-shadow:0 30px 70px rgba(0,0,0,.35);max-height:86vh;overflow:auto;
+}
+.mdm-modal-box h3{font-size:19px;margin-bottom:14px}
+.mdm-modal-box label{display:block;font-size:13.5px;font-weight:700;margin:12px 0 6px}
+.mdm-modal-box input,.mdm-modal-box textarea{
+  width:100%;border:1px solid var(--mdm-line);border-radius:9px;padding:10px 12px;
+  font-family:inherit;font-size:14px;outline:none;background:var(--mdm-paper);
+}
+.mdm-modal-box input:focus,.mdm-modal-box textarea:focus{border-color:var(--mdm-accent)}
+.mdm-modal-close{
+  position:absolute;right:14px;top:12px;border:0;background:transparent;
+  font-size:22px;line-height:1;color:#9a948a;
+}
+.mdm-modal-close:hover{color:var(--mdm-accent)}
+
+.mdm-totop{
+  position:fixed;right:26px;bottom:30px;width:44px;height:44px;border-radius:50%;
+  border:0;background:var(--mdm-ink);color:#fff;font-size:17px;z-index:120;
+  opacity:0;pointer-events:none;transition:.3s;box-shadow:0 10px 24px rgba(0,0,0,.25);
+}
+.mdm-totop.is-show{opacity:1;pointer-events:auto}
+.mdm-totop:hover{background:var(--mdm-accent)}
+
+/* ============ 响应式 ============ */
+@media (max-width:980px){
+  .mdm-hero-grid{grid-template-columns:1fr;gap:32px}
+  .mdm-focus-grid{grid-template-columns:1fr}
+  .mdm-topic-grid{grid-template-columns:1fr}
+  .mdm-authors{grid-template-columns:1fr}
+  .mdm-review-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .mdm-partners{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .mdm-footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  :root{--mdm-head:126px}
+  .mdm-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;
+    background:var(--mdm-ink2);padding:12px 4vw 18px;flex-direction:column;gap:2px;
+    border-top:1px solid rgba(255,255,255,.1);
+  }
+  .mdm-nav.is-open{display:flex}
+  .mdm-header-inner{flex-wrap:wrap;position:relative;gap:12px}
+  .mdm-burger{display:inline-block;margin-left:auto}
+  .mdm-search{margin-left:0;order:5;width:100%;min-width:0}
+  .mdm-vitem{grid-template-columns:1fr}
+  .mdm-vitem-thumb{display:none}
+  .mdm-review-grid{grid-template-columns:1fr}
+  .mdm-footer-grid{grid-template-columns:1fr}
+  .mdm-hero-stats{grid-template-columns:1fr}
+  .mdm-hero-badge{left:8px}
+  .mdm-sec{padding:46px 0}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- ============ 吸顶公告 + 页头 ============ -->
+<div class="mdm-topbar" id="mdmTop">
+  <div class="mdm-notice">
+    <div class="mdm-wrap mdm-notice-inner">
+      <span class="mdm-notice-tag">官方发布</span>
+      <div class="mdm-notice-track" id="mdmNoticeTrack">
+        <div class="mdm-notice-item is-on"><b>《城市回声》第四集上线</b><span>2026-11-21</span></div>
+        <div class="mdm-notice-item"><b>年度原创MV剧征集开启报名</b><span>投稿截止 12-20</span></div>
+        <div class="mdm-notice-item"><b>创作者扶持计划新增 30 个席位</b><span>官方公告</span></div>
+        <div class="mdm-notice-item"><b>高清 4K 片源库扩容至 12000 条</b><span>内容生态更新</span></div>
+      </div>
+      <a href="#mdmNews" class="mdm-notice-link">查看全部动态 →</a>
+    </div>
+  </div>
+  <header class="mdm-header">
+    <div class="mdm-wrap mdm-header-inner">
+      <a class="mdm-logo" href="#mdmTop">
+        <span class="mdm-logo-mark">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 4l14 8-14 8z" fill="#fff"/></svg>
+        </span>
+        <span class="mdm-logo-text">
+          <strong>麻d传媒</strong>
+          <em>MV DRAMA STUDIO</em>
+        </span>
+      </a>
+      <nav class="mdm-nav" id="mdmNav" aria-label="主导航">
+        <a href="#mdmFocus" class="is-active">焦点内容</a>
+        <a href="#mdmAbout">关键词解析</a>
+        <a href="#mdmTopics">专题企划</a>
+        <a href="#mdmCreators">创作者</a>
+        <a href="#mdmReviews">用户评价</a>
+        <a href="#mdmNews">企业动态</a>
+        <a href="#mdmFaq">帮助中心</a>
+      </nav>
+      <button class="mdm-burger" id="mdmBurger" aria-expanded="false" aria-controls="mdmNav">☰ 菜单</button>
+      <form class="mdm-search" id="mdmSearchForm" role="search">
+        <input type="search" id="mdmSearchInput" placeholder="搜索 MV 剧集 / 创作者" aria-label="站内搜索">
+        <button type="submit">搜索</button>
+      </form>
+      <div class="mdm-search-hint" id="mdmSearchHint" role="status"></div>
+    </div>
+  </header>
+</div>
+
+<!-- ============ 首屏 ============ -->
+<section class="mdm-hero" id="mdmHero">
+  <div class="mdm-wrap mdm-hero-grid">
+    <div>
+      <span class="mdm-hero-kicker">◎ 官方网站 · 企业级视频品牌</span>
+      <h1>麻d传媒剧在线mv免费</h1>
+      <p class="mdm-hero-lead">以原创MV剧集为核心的专业影像内容平台，让每一段故事都被高清记录，让每一位创作者被认真看见。</p>
+      <p class="mdm-hero-intro">作为持续运营的麻d传媒剧在线mv免费官方网站，我们深耕MV短剧与音乐影像的垂直领域，以“正版、高清、原创”为内容底线，为观众提供值得信赖的观看体验，为创作者搭建有口碑的内容生态。平台自有剧集库、创作者社区与制作团队三位一体，行业领先的选片标准与用户至上的服务理念，让精品内容在这里持续发生。</p>
+      <div class="mdm-hero-actions">
+        <a class="mdm-btn mdm-btn-primary" href="#mdmFocus">▶ 立即观看精选剧集</a>
+        <a class="mdm-btn mdm-btn-ghost" href="#mdmCreators">认识创作者</a>
+        <a class="mdm-btn mdm-btn-ghost" href="#mdmNews">官方发布</a>
+      </div>
+      <div class="mdm-hero-stats">
+        <div class="mdm-stat"><b data-mdm-count="12860">0</b><span>高清MV剧集（条）</span></div>
+        <div class="mdm-stat"><b data-mdm-count="426">0</b><span>签约创作者（位）</span></div>
+        <div class="mdm-stat"><b data-mdm-count="98">0</b><span>用户好评率（%）</span></div>
+      </div>
+    </div>
+    <div class="mdm-hero-visual">
+      <div class="mdm-hero-frame">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23222a3a'/%3E%3Cstop offset='1' stop-color='%2310141c'/%3E%3C/linearGradient%3E%3CradialGradient id='g2' cx='.7' cy='.3' r='.6'%3E%3Cstop offset='0' stop-color='%23e8442a' stop-opacity='.85'/%3E%3Cstop offset='1' stop-color='%23e8442a' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='800' height='500' fill='url(%23g1)'/%3E%3Crect width='800' height='500' fill='url(%23g2)'/%3E%3Ccircle cx='605' cy='175' r='92' fill='%23e8442a' opacity='.9'/%3E%3Ccircle cx='605' cy='175' r='128' fill='none' stroke='%23ff8f78' stroke-width='2' opacity='.45'/%3E%3Cpath d='M575 135l54 40-54 40z' fill='%23fff'/%3E%3Crect x='0' y='360' width='800' height='140' fill='%230d1016' opacity='.7'/%3E%3Cg fill='%23fff' opacity='.9'%3E%3Crect x='56' y='398' width='150' height='12' rx='6'/%3E%3Crect x='56' y='424' width='92' height='9' rx='4.5' opacity='.55'/%3E%3C/g%3E%3Cg stroke='%23ff8f78' stroke-width='3' fill='none' opacity='.75'%3E%3Cpath d='M56 216h180v96'/%3E%3Cpath d='M236 216l-18-16M236 216l-18 16'/%3E%3C/g%3E%3Cg fill='%23fff' opacity='.14'%3E%3Crect x='300' y='80' width='4' height='40'/%3E%3Crect x='320' y='80' width='4' height='64'/%3E%3Crect x='340' y='80' width='4' height='28'/%3E%3Crect x='360' y='80' width='4' height='52'/%3E%3Crect x='380' y='80' width='4' height='38'/%3E%3C/g%3E%3C/svg%3E" alt="麻d传媒官方MV剧集主视觉：红色播放圆环与分镜波形构图" width="800" height="500">
+      </div>
+      <div class="mdm-hero-badge"><i></i>本季主推 · 原创 MV 剧《城市回声》</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 焦点内容 ============ -->
+<section class="mdm-sec" id="mdmFocus">
+  <div class="mdm-wrap">
+    <div class="mdm-sec-head">
+      <span class="mdm-sec-tag">FOCUS / 焦点推荐</span>
+      <h2>麻d传媒剧在线mv免费 · 本周<em>焦点剧集</em>与精选条目</h2>
+      <p>编辑团队每周从上千条投稿中选出重点内容，重点条目配大图，其余以文字摘要呈现，方便快速判断是否值得一看。</p>
+    </div>
+
+    <div class="mdm-focus-grid">
+      <article class="mdm-focus-main">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231e3348'/%3E%3Cstop offset='1' stop-color='%23354857'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23f1)'/%3E%3Cg fill='%23ffffff' opacity='.09'%3E%3Ccircle cx='120' cy='330' r='120'/%3E%3Ccircle cx='660' cy='120' r='90'/%3E%3C/g%3E%3Cpath d='M0 340 L180 210 L320 300 L500 160 L660 260 L800 200 L800 450 L0 450Z' fill='%230e1822' opacity='.85'/%3E%3Cg fill='%23ffcf8a'%3E%3Ccircle cx='180' cy='210' r='5'/%3E%3Ccircle cx='500' cy='160' r='5'/%3E%3Ccircle cx='660' cy='260' r='5'/%3E%3C/g%3E%3Cg fill='%23fff' opacity='.92'%3E%3Crect x='56' y='64' width='230' height='16' rx='8'/%3E%3Crect x='56' y='94' width='150' height='10' rx='5' opacity='.55'/%3E%3C/g%3E%3Ccircle cx='690' cy='70' r='26' fill='%23e8442a'/%3E%3Cpath d='M681 58l20 12-20 12z' fill='%23fff'/%3E%3C/svg%3E" alt="《城市回声》第四集片头视觉：夜色城市天际线与暖黄灯光节点" width="800" height="450">
+        <div class="mdm-focus-body">
+          <div class="mdm-focus-meta">
+            <span>原创 MV 剧</span><span>第 4 集</span><span>时长 22:18</span><span>更新于 2026-11-21</span>
+          </div>
+          <h3>《城市回声》第四集：在深夜的便利店，重新听懂一首歌</h3>
+          <p>本集把镜头交给三组普通人：夜班店员、代驾司机与凌晨练琴的学生。原创配乐《回声》在便利店的白光灯下被反复吟唱，声音从街角传到天桥，最后落回出租屋的窗台。导演用一镜到底的横移串联起四段生活，讲述城市里那些不被注意却持续发光的坚持。适合在夜里安静看完，也适合作为一次关于“陪伴”的影像表达样本。</p>
+          <div>
+            <span class="mdm-tag mdm-tag-accent">官方首发</span>
+            <span class="mdm-tag">原创音乐</span>
+            <span class="mdm-tag">城市探索</span>
+            <span class="mdm-tag">治愈影像</span>
+          </div>
+          <div class="mdm-ops" style="margin-top:14px">
+            <button class="mdm-op" data-mdm-like data-mdm-base="3421">赞 <span class="mdm-cnt">3421</span></button>
+            <button class="mdm-op" data-mdm-fav>☆ 收藏</button>
+            <button class="mdm-op" data-mdm-copy>复制链接</button>
+            <button class="mdm-op" data-mdm-share>分享</button>
+          </div>
+        </div>
+      </article>
+
+      <div class="mdm-focus-side">
+        <div class="mdm-side-item">
+          <h4>《霓虹晚风》MV 剧 · 第一季合集</h4>
+          <p>以海边小城为舞台的原创音乐短片合集，六首歌、六个夜晚，讲清楚“离开与留下”这件小事。</p>
+          <span class="mdm-tag">精选合集</span><span class="mdm-tag">生活方式</span>
+        </div>
+        <div class="mdm-side-item">
+          <h4>创作者幕后：一支 MV 剧是怎么被做出来的</h4>
+          <p>从分镜、勘景到配乐混音，导演组用 18 分钟拆解完整制作流程，包含预算表与拍摄日程模板。</p>
+          <span class="mdm-tag">创作幕后</span><span class="mdm-tag">教程干货</span>
+        </div>
+        <div class="mdm-side-item">
+          <h4>新人榜 · 本月值得关注的 6 位创作者</h4>
+          <p>他们的共同点是：设备不贵，但故事讲得足够真诚。榜单由播放、收藏与社区投票综合计算。</p>
+          <span class="mdm-tag">数据榜单</span><span class="mdm-tag">成长</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdm-vlist" id="mdmVideoList">
+      <article class="mdm-vitem">
+        <div class="mdm-vitem-thumb"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 90'%3E%3Crect width='160' height='90' fill='%23384b3f'/%3E%3Cpath d='M0 70 Q50 40 90 62 T160 50 L160 90 L0 90Z' fill='%2322322a'/%3E%3Ccircle cx='120' cy='26' r='12' fill='%23d4b164'/%3E%3Crect x='16' y='18' width='48' height='6' rx='3' fill='%23fff' opacity='.8'/%3E%3C/svg%3E" alt="山野实录片段缩略图：绿色山脊线与落日" width="160" height="90"></div>
+        <div class="mdm-vitem-body">
+          <h4>山野实录：在海拔 1800 米录一段风声</h4>
+          <p>声音采集师带着两支麦克风上山，把风声、松针声与溪流声剪成一首 4 分钟的环境音乐影像。</p>
+          <div class="mdm-vitem-info"><span>作者：林间声场</span><span>播放 12.4 万</span><span>收藏 8621</span><span>标签：户外活动</span></div>
+        </div>
+        <div class="mdm-vitem-ops">
+          <button class="mdm-op" data-mdm-like data-mdm-base="1876">赞 <span class="mdm-cnt">1876</span></button>
+          <button class="mdm-op" data-mdm-fav>☆</button>
+        </div>
+      </article>
+
+      <article class="mdm-vitem">
+        <div class="mdm-vitem-thumb"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 90'%3E%3Crect width='160' height='90' fill='%23f2e6d8'/%3E%3Ccircle cx='52' cy='46' r='24' fill='%23d98f5a'/%3E%3Crect x='88' y='28' width='56' height='8' rx='4' fill='%236b4a35'/%3E%3Crect x='88' y='44' width='42' height='6' rx='3' fill='%23a8836a'/%3E%3Crect x='88' y='58' width='50' height='6' rx='3' fill='%23a8836a'/%3E%3C/svg%3E" alt="厨房暖光缩略图：厨师侧影与菜谱卡片" width="160" height="90"></div>
+        <div class="mdm-vitem-body">
+          <h4>一人食的深夜厨房：三道菜配一支 MV</h4>
+          <p>把做饭的节奏剪成音乐节拍，番茄汤、煎蛋与烤面包对应三段旋律，收尾是一首写给独居者的歌。</p>
+          <div class="mdm-vitem-info"><span>作者：阿禾的餐桌</span><span>播放 9.7 万</span><span>收藏 5120</span><span>标签：美食烹饪</span></div>
+        </div>
+        <div class="mdm-vitem-ops">
+          <button class="mdm-op" data-mdm-like data-mdm-base="1204">赞 <span class="mdm-cnt">1204</span></button>
+          <button class="mdm-op" data-mdm-fav>☆</button>
+        </div>
+      </article>
+
+      <article class="mdm-vitem">
+        <div class="mdm-vitem-thumb"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 90'%3E%3Crect width='160' height='90' fill='%231f2436'/%3E%3Cg fill='%23596bd6' opacity='.85'%3E%3Crect x='18' y='30' width='8' height='30'/%3E%3Crect x='34' y='20' width='8' height='50'/%3E%3Crect x='50' y='36' width='8' height='24'/%3E%3C/g%3E%3Ccircle cx='112' cy='45' r='20' fill='none' stroke='%23ff8f78' stroke-width='3'/%3E%3Cpath d='M104 45h16' stroke='%23ff8f78' stroke-width='3'/%3E%3C/svg%3E" alt="音频工程缩略图：蓝色声波与混音旋钮" width="160" height="90"></div>
+        <div class="mdm-vitem-body">
+          <h4>把手机录音修成电影感：5 个免费混音步骤</h4>
+          <p>从降噪、EQ 到空间混响，剪辑师用五分钟讲清楚 MV 剧配乐的最低成本处理路径，附参数建议。</p>
+          <div class="mdm-vitem-info"><span>作者：混音小组</span><span>播放 15.2 万</span><span>收藏 1.1 万</span><span>标签：教程干货</span></div>
+        </div>
+        <div class="mdm-vitem-ops">
+          <button class="mdm-op" data-mdm-like data-mdm-base="2605">赞 <span class="mdm-cnt">2605</span></button>
+          <button class="mdm-op" data-mdm-fav>☆</button>
+        </div>
+      </article>
+
+      <article class="mdm-vitem">
+        <div class="mdm-vitem-thumb"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 90'%3E%3Crect width='160' height='90' fill='%23e7ded2'/%3E%3Crect x='24' y='22' width='60' height='46' rx='4' fill='%23fff'/%3E%3Crect x='32' y='32' width='44' height='5' rx='2.5' fill='%23b9ab99'/%3E%3Crect x='32' y='44' width='32' height='5' rx='2.5' fill='%23b9ab99'/%3E%3Cg fill='%23c8a05c'%3E%3Ccircle cx='112' cy='44' r='16'/%3E%3C/g%3E%3C/svg%3E" alt="访谈现场缩略图：手写板与采访椅" width="160" height="90"></div>
+        <div class="mdm-vitem-body">
+          <h4>对话导演组：为什么我们坚持做长镜头 MV 剧</h4>
+          <p>一次 40 分钟的深度访谈，聊预算限制、演员调度与观众耐心，也聊平台如何保护创作者的表达。</p>
+          <div class="mdm-vitem-info"><span>作者：麻d编辑部</span><span>播放 6.8 万</span><span>收藏 3980</span><span>标签：人物访谈</span></div>
+        </div>
+        <div class="mdm-vitem-ops">
+          <button class="mdm-op" data-mdm-like data-mdm-base="986">赞 <span class="mdm-cnt">986</span></button>
+          <button class="mdm-op" data-mdm-fav>☆</button>
+        </div>
+      </article>
+
+      <article class="mdm-vitem">
+        <div class="mdm-vitem-thumb"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 90'%3E%3Crect width='160' height='90' fill='%23263340'/%3E%3Cg stroke='%23ff9d7a' stroke-width='2' opacity='.8' fill='none'%3E%3Cpath d='M20 66l26-22 22 14 18-26 24 18 30-16'/%3E%3C/g%3E%3Ccircle cx='132' cy='66' r='9' fill='%23ff5a3c'/%3E%3Crect x='20' y='20' width='54' height='6' rx='3' fill='%23fff' opacity='.75'/%3E%3C/svg%3E" alt="数据榜单缩略图：上升折线与播放热度标记" width="160" height="90"></div>
+        <div class="mdm-vitem-body">
+          <h4>11 月热度榜发布：这三支 MV 剧为什么集体破圈</h4>
+          <p>结合完播率、弹幕密度与二次创作数量，编辑部给出解读：题材真实、节奏克制、配乐耐听是共同点。</p>
+          <div class="mdm-vitem-info"><span>作者：数据观察室</span><span>播放 8.1 万</span><span>收藏 4310</span><span>标签：行业观察</span></div>
+        </div>
+        <div class="mdm-vitem-ops">
+          <button class="mdm-op" data-mdm-like data-mdm-base="1512">赞 <span class="mdm-cnt">1512</span></button>
+          <button class="mdm-op" data-mdm-fav>☆</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 关键词解析 ============ -->
+<section class="mdm-sec mdm-sec-alt" id="mdmAbout">
+  <div class="mdm-wrap">
+    <div class="mdm-sec-head">
+      <span class="mdm-sec-tag">INSIGHT / 关键词解析</span>
+      <h2>关于“麻d传媒剧在线mv免费”的<em>平台价值</em>与内容生态解析</h2>
+      <p>我们把这个关键词拆成三件事来看：剧集是什么、在线意味着什么、以及免费背后企业如何持续运营。</p>
+    </div>
+    <article class="mdm-article">
+      <h3>一、麻d传媒剧在线mv免费是什么：一个以 MV 剧为核心的视频品牌</h3>
+      <p>麻d传媒剧在线mv免费并不是一个简单的视频合集页面，而是一套持续运转的内容生产与分发体系。它由三部分组成：自有剧集库、创作者社区、制作与发行团队。剧集库负责沉淀精品内容，目前累计上线一万两千余条高清 MV 剧与音乐影像作品，覆盖剧情短片、音乐叙事、城市纪实、人物访谈与幕后纪录等类型；创作者社区负责把分散的个体表达汇聚起来，四百余位签约创作者在这里获得选题建议、剪辑协作与发行支持；制作与发行团队则承担从策划、勘景、拍摄到后期混音的全流程工作，让“原创”不只停留在口号上，而是可被检验的制作标准。</p>
+      <p>作为官方网站，我们把“麻d传媒剧”定义为一种介于音乐视频与短剧之间的内容形态：它有明确的歌曲结构与情绪线，也有角色的行动与场景推进。观众既能把它当作一支加长版 MV 来看，也能把它当作一集短剧来追。这种形态的优势在于节奏自由：一首歌五分钟，一集 MV 剧可以是八分钟、十八分钟，甚至拆分成为系列连载。在线观看则意味着观众可以在任何设备上继续未完的剧情，收藏、评论、分享与二次创作都发生在同一个社区里，形成可循环的内容生态。</p>
+      <p>至于关键词中的“免费”，它指向的是观看门槛，而不是内容价值。平台的基础观看区长期免费开放，高清片源、正版授权与稳定播放是底线配置；会员与增值服务提供的是更高分辨率、离线下载、超前点映与创作素材库等附加体验。我们相信，一个真正值得信赖的视频品牌，不能只靠收费墙建立壁垒，而要靠持续产出的精品内容与真实的社区口碑。这也是麻d传媒剧在线mv免费在行业内被反复提及的原因：用户首选的往往不是最贵的平台，而是最稳定的平台。</p>
+
+      <h3>二、内容生态如何运转：从一次投稿到一部高清作品</h3>
+      <p>一条内容从投稿到上线，平均需要经过七个环节：选题登记、剧本或分镜初审、素材合规检查、剪辑与调色建议、配乐与音效处理、片头片尾标准化、上线前的元数据填报。前两个环节由编辑团队与创作者共同完成，目的是避免“拍完了才发现方向不对”的时间浪费；中间三个环节是纯技术工作，平台提供模板与技术支持，让中小创作者也能达到专业观感；最后两个环节决定内容能否被看见——标准化的片头、清晰的封面、准确的标签与摘要，直接影响一支 MV 剧在搜索结果与推荐流中的表现。</p>
+      <p>在垂直领域里，我们坚持两件事。第一是“正版优先”：所有上线的配乐、字体与素材都要求来源可追溯，商用授权文件需要随片归档，这是平台对企业客户与品牌合作方的基本承诺。第二是“高清优先”：即便创作者使用手机拍摄，我们也会建议在剪辑阶段统一到 1080P 以上的输出标准，并在播放端提供自适应码率，避免在弱网环境下出现音画不同步。这两条标准看起来朴素，却是一个视频品牌能否长期积累口碑的关键。</p>
+      <div class="mdm-quote">我们更愿意把“免费”理解为一种邀请：先让人看见，再谈价值。内容生态的起点从来不是付费按钮，而是有人愿意把真实的生活拍下来、剪出来、传上来。</div>
+      <p>为了让生态保持活力，平台设置了多层激励机制。新人创作者可以参加每月一次的主题挑战赛，提交一支三分钟以内的 MV 剧片段，获得编辑点评与流量扶持；成熟创作者可以申请专题企划，获得制作补贴与联合宣发；企业与合作品牌则可以发起命题创作，把品牌故事交给更懂影像的人来讲。这些机制不是孤立的比赛，而是一条清晰的成长路径：从第一次上传，到第一次被推荐，再到第一次拿到制作预算。平台持续运营的意义，正在于让这条路径始终有人走。</p>
+
+      <h3>三、为什么用户会选择这里：品质、社区与陪伴</h3>
+      <p>观众的耐心是有限的。一个视频平台如果前三十秒抓不住人，后面再精致也很难被看完。因此我们在内容编排上格外克制：焦点位每周只换一次，重点条目必须同时满足“故事完整、音画达标、情绪真实”三条标准；列表位则更看重信息效率，标题、摘要、标签、作者与数据一次给全，让观众在十秒内判断是否点开。这种编排方式牺牲了一部分“视觉热闹”，但换来了更高的完播率与更稳定的回访，也让真正用心的创作者获得更长的曝光周期。</p>
+      <p>社区氛围同样重要。我们鼓励评论具体、有信息量，反对无意义的争吵；举报与反馈入口放在每一处互动按钮旁边，处理结果会在企业动态里公开说明。对于创作者来说，这意味着可以更安心地尝试新题材；对于观众来说，这意味着打开评论区时不会先被噪音劝退。一个内容社区真正的门槛，往往不是技术，而是它是否愿意为“真实、温暖、有力量”的表达留出空间。</p>
+      <p>最后是陪伴感。麻d传媒剧在线mv免费的内容库里，有很多并不“爆”的作品：一段异地通勤的清晨、一次父母第一次看孩子演出、一间开了二十年的修表店。它们不会占据焦点位太久，却会在特定时刻被某个观众搜索到、收藏、再分享给另一个人。这种长尾的、缓慢的连接，构成了平台最坚实的部分。我们相信企业级品牌不只是规模和数据的堆叠，也是对普通生活持续保持敬意。这也是我们愿意把“社会责任”写进品牌介绍的原因：让更多人被看见，让更多故事有被记录的机会。</p>
+      <p>未来一年，平台将继续扩容高清片源库，开放更多创作工具的免费额度，并与地方文化机构合作推出的在地影像计划，把城市探索与在地文化的内容做得更细。我们也会把观众的评价直接带进选题会，让社区的声音真正影响内容方向。对麻d传媒剧在线mv免费来说，下一步不是变得更大，而是变得更值得信赖。</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 专题企划 ============ -->
+<section class="mdm-sec" id="mdmTopics">
+  <div class="mdm-wrap">
+    <div class="mdm-sec-head">
+      <span class="mdm-sec-tag">SERIES / 专题企划</span>
+      <h2>正在更新的<em>品牌专题</em>与企划单元</h2>
+      <p>每个专题由编辑组与创作者共同推进，包含固定更新节奏与明确的内容条目，方便持续追更。</p>
+    </div>
+    <div class="mdm-topic-grid">
+      <article class="mdm-topic">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280'%3E%3Cdefs%3E%3ClinearGradient id='t1' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23f4d8b8'/%3E%3Cstop offset='1' stop-color='%23d98f5a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='280' fill='url(%23t1)'/%3E%3Cg fill='%23fff' opacity='.5'%3E%3Crect x='60' y='190' width='150' height='10' rx='5'/%3E%3Crect x='60' y='212' width='96' height='8' rx='4'/%3E%3C/g%3E%3Ccircle cx='500' cy='120' r='66' fill='%23fff' opacity='.35'/%3E%3Cpath d='M470 90l52 30-52 30z' fill='%23a1542b' opacity='.85'/%3E%3C/svg%3E" alt="《晚安食堂》专题视觉：暖橙渐变与播放三角" width="640" height="280">
+        <div class="mdm-topic-body">
+          <div class="mdm-topic-head"><h3>《晚安食堂》· 深夜一人食影像企划</h3><span class="mdm-badge mdm-badge-live">更新中</span></div>
+          <p>用食物记录一天最后的时刻。每集 12 分钟，跟随一位普通人的夜宵，聊一段生活里的小转折。已更新 14 集，每周五上线。</p>
+          <ul class="mdm-topic-list">
+            <li><span>EP14</span>加班到十一点之后，那碗永远多放葱的馄饨</li>
+            <li><span>EP13</span>搬家第一晚，用一口旧锅煮面</li>
+            <li><span>EP12</span>便利店关东煮与写给自己的信</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="mdm-topic">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280'%3E%3Cdefs%3E%3ClinearGradient id='t2' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23203a4d'/%3E%3Cstop offset='1' stop-color='%230f1a24'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='280' fill='url(%23t2)'/%3E%3Cg stroke='%2367c8d8' stroke-width='2' opacity='.6' fill='none'%3E%3Cpath d='M0 200 Q120 140 240 190 T480 170 T640 210'/%3E%3C/g%3E%3Cg fill='%23ffd27a'%3E%3Ccircle cx='140' cy='86' r='5'/%3E%3Ccircle cx='320' cy='64' r='4'/%3E%3Ccircle cx='500' cy='96' r='5'/%3E%3C/g%3E%3C/svg%3E" alt="《城市回声》专题视觉：深蓝夜色与青色声波线" width="640" height="280">
+        <div class="mdm-topic-body">
+          <div class="mdm-topic-head"><h3>《城市回声》· 原创 MV 剧连载</h3><span class="mdm-badge mdm-badge-live">更新中</span></div>
+          <p>以一座城市为舞台，用六首歌串联六段相遇与告别。每集独立成篇，也可以按顺序连看。已更新 4 集，双周更新。</p>
+          <ul class="mdm-topic-list">
+            <li><span>EP4</span>深夜便利店与一首被重新听懂的歌</li>
+            <li><span>EP3</span>天桥上的吉他手与三次错过</li>
+            <li><span>EP2</span>旧书店的下午，雨停之前</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="mdm-topic">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280'%3E%3Crect width='640' height='280' fill='%23efe9dd'/%3E%3Cg fill='%23c8a05c'%3E%3Crect x='70' y='70' width='120' height='140' rx='6'/%3E%3C/g%3E%3Cg fill='%23fff'%3E%3Crect x='86' y='90' width='88' height='8' rx='4'/%3E%3Crect x='86' y='110' width='64' height='8' rx='4'/%3E%3C/g%3E%3Cg fill='%235c5448'%3E%3Crect x='250' y='96' width='300' height='10' rx='5'/%3E%3Crect x='250' y='124' width='230' height='10' rx='5'/%3E%3Crect x='250' y='152' width='270' height='10' rx='5'/%3E%3C/g%3E%3C/svg%3E" alt="《幕后手册》专题视觉：米色底与分镜卡片" width="640" height="280">
+        <div class="mdm-topic-body">
+          <div class="mdm-topic-head"><h3>《幕后手册》· 一支 MV 剧的完整方法</h3><span class="mdm-badge mdm-badge-soon">筹备中</span></div>
+          <p>把制作流程拆成可复用的步骤：预算、勘景、分镜、收音、调色。适合想认真拍一支作品的新人。预计 12 月上线。</p>
+          <ul class="mdm-topic-list">
+            <li><span>01</span>三千元预算怎么拍出一集 MV 剧</li>
+            <li><span>02</span>分镜表的三种写法与常见错误</li>
+            <li><span>03</span>收音比画面更容易毁掉一支作品</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="mdm-topic">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 280'%3E%3Crect width='640' height='280' fill='%23dde6ea'/%3E%3Cg fill='%233d5a68' opacity='.8'%3E%3Crect x='90' y='150' width='26' height='70'/%3E%3Crect x='130' y='120' width='26' height='100'/%3E%3Crect x='170' y='170' width='26' height='50'/%3E%3C/g%3E%3Cg fill='%23e8442a'%3E%3Ccircle cx='470' cy='120' r='42'/%3E%3C/g%3E%3Cg fill='%23fff'%3E%3Crect x='250' y='70' width='120' height='10' rx='5'/%3E%3Crect x='250' y='96' width='90' height='8' rx='4'/%3E%3C/g%3E%3C/svg%3E" alt="《在地计划》专题视觉：青灰建筑轮廓与红色标记点" width="640" height="280">
+        <div class="mdm-topic-body">
+          <div class="mdm-topic-head"><h3>《在地计划》· 地方影像与本地创作者</h3><span class="mdm-badge mdm-badge-live">每月更新</span></div>
+          <p>与地方文化机构合作，记录小城的手艺、街巷与声音。每期由本地创作者主导，平台提供制作支持与发行资源。</p>
+          <ul class="mdm-topic-list">
+            <li><span>第 7 期</span>一间开了二十年的修表店</li>
+            <li><span>第 6 期</span>菜市场凌晨四点的第一批人</li>
+            <li><span>第 5 期</span>消失中的手工面线</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 创作者矩阵 ============ -->
+<section class="mdm-sec mdm-sec-alt" id="mdmCreators">
+  <div class="mdm-wrap">
+    <div class="mdm-sec-head">
+      <span class="mdm-sec-tag">CREATORS / 创作者矩阵</span>
+      <h2>持续产出的<em>核心创作者</em>与他们的擅长领域</h2>
+      <p>以下创作者均为平台签约或长期合作作者，作品覆盖剧情、纪实、音乐与幕后教学多个方向。</p>
+    </div>
+    <div class="mdm-authors">
+      <article class="mdm-author">
+        <div class="mdm-avatar" style="background:linear-gradient(135deg,#e8442a,#f4a261)">林</div>
+        <div class="mdm-author-info">
+          <h4>林间声场 <span class="mdm-tag mdm-tag-accent">官方认证</span></h4>
+          <div class="mdm-author-role">环境影像 / 声音采集</div>
+          <p>常年在山野与湿地间记录自然声景，擅长把风声、水声与脚步剪成有叙事感的环境音乐影像，作品节奏缓慢但不松散，被观众称为“可以闭眼看的 MV”。</p>
+          <div class="mdm-author-nums"><span>作品 <b>86</b></span><span>粉丝 <b>24.6 万</b></span></div>
+          <button class="mdm-op" data-mdm-author="林间声场" data-mdm-domain="环境影像与声音采集">查看简介</button>
+        </div>
+      </article>
+
+      <article class="mdm-author">
+        <div class="mdm-avatar" style="background:linear-gradient(135deg,#c8973f,#e6c483)">禾</div>
+        <div class="mdm-author-info">
+          <h4>阿禾的餐桌</h4>
+          <div class="mdm-author-role">美食烹饪 / 生活记录</div>
+          <p>一人食影像的长期记录者，擅长用厨房里的真实动作代替解说词，把备菜、下锅与收尾剪成音乐节拍。她的作品被很多独居观众当作睡前固定节目。</p>
+          <div class="mdm-author-nums"><span>作品 <b>132</b></span><span>粉丝 <b>31.2 万</b></span></div>
+          <button class="mdm-op" data-mdm-author="阿禾的餐桌" data-mdm-domain="美食烹饪与生活记录">查看简介</button>
+        </div>
+      </article>
+
+      <article class="mdm-author">
+        <div class="mdm-avatar" style="background:linear-gradient(135deg,#4a5cb8,#8fa2e6)">混</div>
+        <div class="mdm-author-info">
+          <h4>混音小组</h4>
+          <div class="mdm-author-role">音频工程 / 教程干货</div>
+          <p>由三位录音师组成的教学向团队，专注低成本音频处理，发布过大量可直接套用的参数模板，帮助新人解决 MV 剧中人声被环境声盖住、对白不清晰等常见问题。</p>
+          <div class="mdm-author-nums"><span>作品 <b>64</b></span><span>粉丝 <b>18.9 万</b></span></div>
+          <button class="mdm-op" data-mdm-author="混音小组" data-mdm-domain="音频工程与剪辑教学">查看简介</button>
+        </div>
+      </article>
+
+      <article class="mdm-author">
+        <div class="mdm-avatar" style="background:linear-gradient(135deg,#2f6b52,#7bb196)">编</div>
+        <div class="mdm-author-info">
+          <h4>麻d编辑部</h4>
+          <div class="mdm-author-role">人物访谈 / 行业观察</div>
+          <p>平台官方编辑组，负责焦点内容编排、创作者访谈与行业观察类内容。访谈以问题尖锐、剪辑克制著称，常被同行引用作为行业讨论的参考材料。</p>
+          <div class="mdm-author-nums"><span>作品 <b>210</b></span><span>粉丝 <b>42.7 万</b></span></div>
+          <button class="mdm-op" data-mdm-author="麻d编辑部" data-mdm-domain="人物访谈与行业观察">查看简介</button>
+        </div>
+      </article>
+
+      <article class="mdm-author">
+        <div class="mdm-avatar" style="background:linear-gradient(135deg,#5a4a72,#a48fbe)">城</div>
+        <div class="mdm-author-info">
+          <h4>城市回声剧组</h4>
+          <div class="mdm-author-role">原创 MV 剧 / 剧情短片</div>
+          <p>以城市为母题的固定制作班组，习惯长镜头与自然光拍摄，作品多聚焦夜班工作者、代驾司机与异地学生，擅长在有限预算内完成完整情绪弧线。</p>
+          <div class="mdm-author-nums"><span>作品 <b>38</b></span><span>粉丝 <b>27.4 万</b></span></div>
+          <button class="mdm-op" data-mdm-author="城市回声剧组" data-mdm-domain="原创 MV 剧与剧情短片">查看简介</button>
+        </div>
+      </article>
+
+      <article class="mdm-author">
+        <div class="mdm-avatar" style="background:linear-gradient(135deg,#2d7c8a,#7ec2cd)">数</div>
+        <div class="mdm-author-info">
+          <h4>数据观察室</h4>
+          <div class="mdm-author-role">数据榜单 / 深度测评</div>
+          <p>以公开数据为基础做内容分析，定期发布热度榜、新人榜与口碑榜，同时提供剧集节奏与镜头密度的量化测评，帮助创作者理解“为什么这条内容会被看完”。</p>
+          <div class="mdm-author-nums"><span>作品 <b>95</b></span><span>粉丝 <b>22.1 万</b></span></div>
+          <button class="mdm-op" data-mdm-author="数据观察室" data-mdm-domain="数据榜单与内容测评">查看简介</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 用户评价 ============ -->
+<section class="mdm-sec" id="mdmReviews">
+  <div class="mdm-wrap">
+    <div class="mdm-sec-head">
+      <span class="mdm-sec-tag">VOICES / 用户评价</span>
+      <h2>来自观众与创作者的<em>真实反馈</em></h2>
+      <p>评价来自站内评论、创作者回访与投稿者问卷，语气与关注点各不相同，我们未做统一润色。</p>
+    </div>
+    <div class="mdm-review-grid">
+      <article class="mdm-review">
+        <div class="mdm-review-top">
+          <div class="mdm-avatar" style="background:#e8442a">柚</div>
+          <div><div class="mdm-review-name">柚子不加冰</div><div class="mdm-review-meta">观众 · 观看 2 年</div></div>
+        </div>
+        <div class="mdm-stars">★★★★★</div>
+        <p class="mdm-review-body">《城市回声》第四集我连看了三遍。那句“重新听懂一首歌”不是文案，是真的有被击中的感觉。希望这种慢慢讲故事的 MV 剧能一直做下去。</p>
+      </article>
+      <article class="mdm-review">
+        <div class="mdm-review-top">
+          <div class="mdm-avatar" style="background:#4a5cb8">拍</div>
+          <div><div class="mdm-review-name">拍片的小陈</div><div class="mdm-review-meta">创作者 · 投稿 11 次</div></div>
+        </div>
+        <div class="mdm-stars">★★★★★</div>
+        <p class="mdm-review-body">最有用的是投稿后的编辑反馈，不是客套话，会直接指出分镜节奏的问题。第二支作品完播率从 21% 提到 46%，比任何教程都实在。</p>
+      </article>
+      <article class="mdm-review">
+        <div class="mdm-review-top">
+          <div class="mdm-avatar" style="background:#c8973f">阿</div>
+          <div><div class="mdm-review-name">阿青在北方</div><div class="mdm-review-meta">观众 · 收藏 138 条</div></div>
+        </div>
+        <div class="mdm-stars">★★★★☆</div>
+        <p class="mdm-review-body">内容质量很稳，就是有点太稳了。希望多来一些实验性的影像，比如纯声音作品或者无对白的，不用每集都讲完整故事。</p>
+      </article>
+      <article class="mdm-review">
+        <div class="mdm-review-top">
+          <div class="mdm-avatar" style="background:#2f6b52">苏</div>
+          <div><div class="mdm-review-name">苏打水与猫</div><div class="mdm-review-meta">观众 · 每晚睡前看</div></div>
+        </div>
+        <div class="mdm-stars">★★★★★</div>
+        <p class="mdm-review-body">《晚安食堂》是我现在的睡前节目。没有夸张的音效，也没有硬拗的煽情，就是一个人吃饭，但看完心里很踏实。</p>
+      </article>
+      <article class="mdm-review">
+        <div class="mdm-review-top">
+          <div class="mdm-avatar" style="background:#5a4a72">剪</div>
+          <div><div class="mdm-review-name">剪到凌晨三点</div><div class="mdm-review-meta">创作者 · 独立工作室</div></div>
+        </div>
+        <div class="mdm-stars">★★★★☆</div>
+        <p class="mdm-review-body">素材库和模板确实省时间，但更希望平台能把授权说明写得更清晰一点，商用和非商用边界现在还要自己问客服。</p>
+      </article>
+      <article class="mdm-review">
+        <div class="mdm-review-top">
+          <div class="mdm-avatar" style="background:#2d7c8a">老</div>
+          <div><div class="mdm-review-name">老周看影像</div><div class="mdm-review-meta">观众 · 前影视从业者</div></div>
+        </div>
+        <div class="mdm-stars">★★★★★</div>
+        <p class="mdm-review-body">从行业角度看，这个平台的选片标准在同类里算克制的，至少不会为流量硬塞标题党。希望继续保持，别被热点带跑。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 企业动态 ============ -->
+<section class="mdm-sec mdm-sec-alt" id="mdmNews">
+  <div class="mdm-wrap">
+    <div class="mdm-sec-head">
+      <span class="mdm-sec-tag">NEWS / 企业动态</span>
+      <h2>麻d传媒官方发布与<em>内容生态更新</em></h2>
+      <p>平台公告、功能更新与合作进展统一在这里发布，重要变动会同步在公告条滚动提示。</p>
+    </div>
+    <ul class="mdm-news">
+      <li>
+        <time>2026-11-21</time>
+        <h4>《城市回声》第四集上线，4K 片源同步开放</h4>
+        <p>本集采用自然光与长镜头拍摄，官方建议在夜间观看。4K 片源已同步上线高清片源库，支持离线下载。</p>
+      </li>
+      <li>
+        <time>2026-11-15</time>
+        <h4>年度原创 MV 剧征集开启报名</h4>
+        <p>面向所有创作者开放，主题不设限，要求时长 3 至 20 分钟。入选作品将获得制作补贴、联合宣发与专题推荐位。</p>
+      </li>
+      <li>
+        <time>2026-11-08</time>
+        <h4>创作者扶持计划新增 30 个席位</h4>
+        <p>新增席位主要面向地方影像与新人创作者，提供剪辑协作、配乐授权与运营辅导，申请入口已开放在投稿中心。</p>
+      </li>
+      <li>
+        <time>2026-10-30</time>
+        <h4>高清片源库扩容至 12000 条</h4>
+        <p>本轮扩容以音乐影像与城市纪实为主，同时优化了弱网环境下的自适应码率策略，播放失败率下降明显。</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ FAQ + 合作墙 ============ -->
+<section class="mdm-sec" id="mdmFaq">
+  <div class="mdm-wrap">
+    <div class="mdm-sec-head">
+      <span class="mdm-sec-tag">HELP / 帮助中心</span>
+      <h2>关于麻d传媒剧在线mv免费的<em>常见问题</em></h2>
+      <p>如果你第一次来到这个官方网站，以下问题大概能帮你更快了解平台的使用方式。</p>
+    </div>
+    <div class="mdm-faq">
+      <details open>
+        <summary>平台上的 MV 剧可以免费观看吗？</summary>
+        <p>基础观看区长期免费开放，包含大部分原创 MV 剧与音乐影像作品。会员服务提供更高分辨率、离线下载、超前点映与创作素材库等附加体验，不影响免费区的正常使用。</p>
+      </details>
+      <details>
+        <summary>如何成为平台的签约创作者？</summary>
+        <p>先在投稿中心提交一支完整作品，编辑组会在七个工作日内给出反馈。若作品方向与平台内容生态匹配，会进入进一步沟通；签约后可以获得制作支持、选题协作与发行资源。</p>
+      </details>
+      <details>
+        <summary>上传的作品需要满足哪些技术要求？</summary>
+        <p>建议输出 1080P 以上、音量标准化至 -14 LUFS 左右，并附上配乐与字体授权说明。平台提供上传前自检清单，按清单逐项确认可以显著减少返工。</p>
+      </details>
+      <details>
+        <summary>为什么有些作品的封面和标题会被调整？</summary>
+        <p>封面与标题直接影响点击与完播，编辑组会在征得作者同意后做适度优化。调整原则是不夸大、不误导，保留作品原意，同时让更多观众有机会点开。</p>
+      </details>
+      <details>
+        <summary>评论被删除或举报后会有反馈吗？</summary>
+        <p>会。每一处互动按钮旁都设有举报与反馈入口，处理结果会在企业动态中汇总说明。涉及人身攻击、侵权与虚假信息的内容会被优先处理。</p>
+      </details>
+      <details>
+        <summary>品牌方可以合作定制 MV 剧吗？</summary>
+        <p>可以。平台提供命题创作、品牌故事改编与联名专题三种合作方式，由编辑部匹配擅长对应题材的创作者，制作流程与普通作品一致，不做硬广式植入。</p>
+      </details>
+      <details>
+        <summary>能否下载作品用于二次创作？</summary>
+        <p>平台提供部分作品的二创授权下载，具体以作品页的授权说明为准。未标注可二创的作品请勿直接搬运，如需授权可通过投稿中心联系我们。</p>
+      </details>
+    </div>
+
+    <div class="mdm-sec-head" style="margin-top:52px">
+      <span class="mdm-sec-tag">PARTNERS / 合作品牌</span>
+      <h2>与我们共同维护<em>内容品质</em>的合作伙伴</h2>
+    </div>
+    <div class="mdm-partners">
+      <div class="mdm-partner">拾光唱片<small>音乐授权合作</small></div>
+      <div class="mdm-partner">南岸影像节<small>展映与评选</small></div>
+      <div class="mdm-partner">青禾器材<small>拍摄设备支持</small></div>
+      <div class="mdm-partner">城市文化馆<small>在地影像计划</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 页脚 ============ -->
+<footer class="mdm-footer">
+  <div class="mdm-wrap">
+    <div class="mdm-footer-grid">
+      <div>
+        <a class="mdm-logo" href="#mdmTop">
+          <span class="mdm-logo-mark">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 4l14 8-14 8z" fill="#fff"/></svg>
+          </span>
+          <span class="mdm-logo-text">
+            <strong>麻d传媒</strong>
+            <em>MV DRAMA STUDIO</em>
+          </span>
+        </a>
+        <p>麻d传媒剧在线mv免费官方网站，专注原创 MV 剧与音乐影像的内容平台。我们以正版、高清、原创为底线，为创作者与企业搭建值得信赖的内容生态，持续运营，持续陪伴。</p>
+      </div>
+      <div>
+        <h4>内容频道</h4>
+        <ul>
+          <li><a href="#mdmFocus">焦点剧集</a></li>
+          <li><a href="#mdmTopics">专题企划</a></li>
+          <li><a href="#mdmCreators">创作者矩阵</a></li>
+          <li><a href="#mdmReviews">用户评价</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于平台</h4>
+        <ul>
+          <li><a href="#mdmAbout">品牌解析</a></li>
+          <li><a href="#mdmNews">企业动态</a></li>
+          <li><a href="#mdmFaq">帮助中心</a></li>
+          <li><a href="#mdmFaq">合作与投稿</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系我们</h4>
+        <ul>
+          <li>投稿与版权：studio@example-mail.com</li>
+          <li>品牌合作：brand@example-mail.com</li>
+          <li>工作日 10:00 – 19:00</li>
+          <li>内容反馈：站内反馈入口</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mdm-footer-bottom">
+      <span class="mdm-slogan">麻d传媒剧在线mv免费 · 官方网站 · 持续运营中</span>
+      <span>© 2026 麻d传媒（示例）· 版权所有 · 备案号：示例备案 000000 号</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ 浮层 / 弹层 ============ -->
+<div class="mdm-toast" id="mdmToast" role="status" aria-live="polite"></div>
+
+<div class="mdm-modal" id="mdmModal" role="dialog" aria-modal="true" aria-labelledby="mdmModalTitle">
+  <div class="mdm-modal-box">
+    <button class="mdm-modal-close" id="mdmModalClose" aria-label="关闭">×</button>
+    <div id="mdmModalBody"></div>
+  </div>
+</div>
+
+<button class="mdm-totop" id="mdmToTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- 公告条滚动 ---------- */
+  var noticeItems = document.querySelectorAll('.mdm-notice-item');
+  var noticeIdx = 0;
+  if(noticeItems.length > 1){
+    setInterval(function(){
+      noticeItems[noticeIdx].classList.remove('is-on');
+      noticeIdx = (noticeIdx + 1) % noticeItems.length;
+      noticeItems[noticeIdx].classList.add('is-on');
+    }, 4200);
+  }
+
+  /* ---------- 移动端导航 ---------- */
+  var burger = document.getElementById('mdmBurger');
+  var nav = document.getElementById('mdmNav');
+  if(burger && nav){
+    burger.addEventListener('click', function(){
+      var open = nav.classList.toggle('is-open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      burger.textContent = open ? '× 收起' : '☰ 菜单';
+    });
+    nav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        nav.classList.remove('is-open');
+        burger.setAttribute('aria-expanded','false');
+        burger.textContent = '☰ 菜单';
+      });
+    });
+  }
+
+  /* ---------- Toast ---------- */
+  var toast = document.getElementById('mdmToast');
+  var toastTimer = null;
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('is-show'); }, 2200);
+  }
+
+  /* ---------- 搜索反馈 ---------- */
+  var searchForm = document.getElementById('mdmSearchForm');
+  var searchInput = document.getElementById('mdmSearchInput');
+  var searchHint = document.getElementById('mdmSearchHint');
+  var searchPool = ['城市回声','晚安食堂','霓虹晚风','幕后手册','林间声场','阿禾的餐桌','混音小组','城市回声剧组','在地计划','新人榜','热度榜'];
+  if(searchForm){
+    searchForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      var kw = searchInput.value.trim();
+      if(!kw){ showToast('请输入关键词后再搜索'); return; }
+      var hit = searchPool.filter(function(x){ return x.indexOf(kw) !== -1; });
+      if(hit.length){
+        showToast('找到 ' + hit.length + ' 条相关结果：' + hit.slice(0,3).join('、'));
+      }else{
+        showToast('暂未找到“' + kw + '”，已记录需求，编辑部会参考');
+      }
+    });
+    searchInput.addEventListener('input', function(){
+      var kw = searchInput.value.trim();
+      if(!kw){ searchHint.classList.remove('is-show'); return; }
+      var hit = searchPool.filter(function(x){ return x.indexOf(kw) !== -1; });
+      searchHint.textContent = hit.length ? '建议：' + hit.slice(0,3).join(' / ') : '试试“城市回声”“晚安食堂”';
+      searchHint.classList.add('is-show');
+    });
+  }
+
+  /* ---------- 数字滚动 ---------- */
+  var counted = false;
+  function runCount(){
+    if(counted) return;
+    counted = true;
+    document.querySelectorAll('[data-mdm-count]').forEach(function(el){
+      var target = parseInt(el.getAttribute('data-mdm-count'), 10);
+      var start = null, dur = 1200;
+      function step(ts){
+        if(!start) start = ts;
+        var p = Math.min((ts - start) / dur, 1);
+        var val = Math.floor(target * (1 - Math.pow(1 - p, 3)));
+        el.textContent = val.toLocaleString('zh-CN');
+        if(p < 1) requestAnimationFrame(step);
+        else el.textContent = target.toLocaleString('zh-CN');
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  var statBox = document.querySelector('.mdm-hero-stats');
+  if(statBox && 'IntersectionObserver' in window){
+    new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting) runCount(); });
+    }, {threshold:.4}).observe(statBox);
+  }else{
+    runCount();
+  }
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  document.querySelectorAll('[data-mdm-like]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var base = parseInt(btn.getAttribute('data-mdm-base'), 10) || 0;
+      var cntEl = btn.querySelector('.mdm-cnt');
+      var on = btn.classList.toggle('is-on');
+      var cur = parseInt(cntEl.textContent.replace(/,/g,''), 10) || base;
+      var next = on ? cur + 1 : Math.max(base, cur - 1);
+      cntEl.textContent = next.toLocaleString('zh-CN');
+      btn.setAttribute('data-mdm-base', on ? base : next);
+    });
+  });
+
+  document.querySelectorAll('[data-mdm-fav]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var on = btn.classList.toggle('is-on');
+      btn.textContent = on ? '★ 已收藏' : '☆ 收藏';
+      showToast(on ? '已加入收藏，可在个人中心查看' : '已取消收藏');
+    });
+  });
+
+  /* ---------- 复制链接 ---------- */
+  document.querySelectorAll('[data-mdm-copy]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var text = document.title + ' · ' + (document.querySelector('.mdm-focus-body h3') || {}).textContent;
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(function(){
+          showToast('链接已复制，可分享给朋友');
+        }).catch(function(){
+          showToast('复制失败，请手动选择文字复制');
+        });
+      }else{
+        showToast('当前环境不支持一键复制');
+      }
+    });
+  });
+
+  /* ---------- 分享 ---------- */
+  document.querySelectorAll('[data-mdm-share]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      openModal('<h3 id="mdmModalTitle">分享这支作品</h3><p style="font-size:14px;color:#6c6a66">选择你想分享到的平台，或复制链接发送给朋友。</p><div class="mdm-ops" style="margin-top:16px"><button class="mdm-op" data-mdm-share-to="微信">微信</button><button class="mdm-op" data-mdm-share-to="微博">微博</button><button class="mdm-op" data-mdm-share-to="QQ">QQ</button><button class="mdm-op" data-mdm-share-to="复制链接">复制链接</button></div>');
+      });
+  });
+
+  /* ---------- 作者弹窗 ---------- */
+  document.querySelectorAll('[data-mdm-author]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var name = btn.getAttribute('data-mdm-author');
+      var domain = btn.getAttribute('data-mdm-domain');
+      openModal('<h3 id="mdmModalTitle">' + name + '</h3><p style="font-size:13.5px;color:#b93a24;font-weight:700;letter-spacing:.5px">' + domain + '</p><p style="font-size:14.5px;color:#4a4843;margin-top:12px">该创作者为麻d传媒剧在线mv免费平台的长期合作作者，作品已通过正版与高清双项标准审核。合作方向包括原创 MV 剧、品牌故事改编与专题企划。如需合作或授权，可通过页脚联系方式与编辑部沟通。</p><div class="mdm-ops" style="margin-top:16px"><button class="mdm-op" data-mdm-modal-close>知道了</button></div>');
+    });
+  });
+
+  /* ---------- 弹窗基础 ---------- */
+  var modal = document.getElementById('mdmModal');
+  var modalBody = document.getElementById('mdmModalBody');
+  var modalClose = document.getElementById('mdmModalClose');
+  function openModal(html){
+    modalBody.innerHTML = html;
+    modal.classList.add('is-show');
+    document.body.style.overflow = 'hidden';
+    bindModalInner();
+  }
+  function closeModal(){
+    modal.classList.remove('is-show');
+    document.body.style.overflow = '';
+  }
+  function bindModalInner(){
+    modalBody.querySelectorAll('[data-mdm-modal-close]').forEach(function(b){
+      b.addEventListener('click', closeModal);
+    });
+    modalBody.querySelectorAll('[data-mdm-share-to]').forEach(function(b){
+      b.addEventListener('click', function(){
+        var to = b.getAttribute('data-mdm-share-to');
+        if(to === '复制链接'){ showToast('链接已复制'); }
+        else{ showToast('已生成分享卡片，可发送到' + to); }
+        closeModal();
+      });
+    });
+  }
+  if(modalClose) modalClose.addEventListener('click', closeModal);
+  if(modal) modal.addEventListener('click', function(e){ if(e.target === modal) closeModal(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeModal(); });
+
+  /* ---------- 回到顶部 ---------- */
+  var toTop = document.getElementById('mdmToTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 520) toTop.classList.add('is-show');
+    else toTop.classList.remove('is-show');
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* ---------- 导航高亮 ---------- */
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.mdm-nav a'));
+  var sections = navLinks.map(function(a){
+    return document.querySelector(a.getAttribute('href'));
+  }).filter(Boolean);
+  if('IntersectionObserver' in window && sections.length){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          navLinks.forEach(function(a){
+            a.classList.toggle('is-active', a.getAttribute('href') === '#' + en.target.id);
+          });
+        }
+      });
+    }, {rootMargin:'-30% 0px -55% 0px', threshold:0});
+    sections.forEach(function(s){ io.observe(s); });
+  }
+})();
+</script>
+</body>
+  </html>
